@@ -1,0 +1,49 @@
+{
+  "name": "angular2-webpack-starter",
+  "description": "starter for angular2 with webpack",
+  "version": "0.0.1",
+  "author": {
+    "name": "Satoshi Ebihara",
+    "email": "kiri@succhiello.net",
+    "url": "https://github.com/succhiello"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "http://succhiello.mit-license.org/"
+  },
+  "scripts": {
+
+    "clean:dist": "rimraf dist",
+
+    "prebuild:dev": "npm run clean:dist",
+    "build:dev": "webpack --config config/webpack.dev.js",
+
+    "prebuild:prod": "npm run clean:dist",
+    "build:prod": "webpack --config config/webpack.prod.js",
+
+    "start": "webpack-dev-server --config config/webpack.dev.js",
+    "postinstall": "typings i",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@angular/common": "^2.0.0-rc.1",
+    "@angular/compiler": "^2.0.0-rc.1",
+    "@angular/core": "^2.0.0-rc.1",
+    "@angular/platform-browser": "^2.0.0-rc.1",
+    "@angular/platform-browser-dynamic": "^2.0.0-rc.1",
+    "core-js": "^2.3.0",
+    "html-webpack-plugin": "^2.16.1",
+    "raw-loader": "^0.5.1",
+    "reflect-metadata": "^0.1.3",
+    "rimraf": "^2.5.2",
+    "rxjs": "^5.0.0-beta.7",
+    "ts-loader": "^0.8.2",
+    "typescript": "^1.8.10",
+    "typings": "^0.8.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-merge": "^0.12.0",
+    "zone.js": "^0.6.12"
+  }
+}

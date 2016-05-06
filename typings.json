@@ -1,0 +1,9 @@
+{
+  "name": "angular2-webpack-starter",
+  "version": false,
+  "dependencies": {},
+  "ambientDevDependencies": {
+    "core-js": "registry:dt/core-js#0.0.0+20160317120654",
+    "node": "registry:dt/node#4.0.0+20160501135006"
+  }
+}
