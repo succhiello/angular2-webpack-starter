@@ -3,8 +3,8 @@ const webpack = require('webpack'),
 
 module.exports = {
     entry: {
-        vendor: './src/vendor',
-        main: './src/bootstrap'
+        vendor: './app/vendor',
+        main: './app/bootstrap'
     },
     output: {
         path: './dist'
@@ -26,7 +26,7 @@ module.exports = {
         new webpack.optimize.CommonsChunkPlugin({name: 'commons'}),
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: './template/index.html',
+            template: './app/layout.html',
             chunksSortMode: 'dependency'
         })
     ]

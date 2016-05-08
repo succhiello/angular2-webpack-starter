@@ -8,7 +8,7 @@ import { FooterComponent } from './footer';
     styles: [
         require('normalize.css')
     ],
-    template: require('template/app.html'),
+    template: require('./app.html'),
     directives: [HeaderComponent, FooterComponent]
 })
 export class AppComponent {
